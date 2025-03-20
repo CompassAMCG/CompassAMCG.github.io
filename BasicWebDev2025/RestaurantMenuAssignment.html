@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Menu</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            background-color: #f8f8f8;
+            padding: 20px;
+        }
+        .menu {
+            width: 400px;
+            height: 550px;
+            padding: 20px;
+            border: 5px solid #333;
+            border-radius: 10px;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .breakfast {
+            background: url('breakfast.jpg') no-repeat center/cover;
+        }
+        .lunch {
+            background: url('lunch.jpg') no-repeat center/cover;
+        }
+        .dinner {
+            background: url('dinner.jpg') no-repeat center/cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu breakfast">
+        <h2>Breakfast Menu</h2>
+        <p>Pancakes, Eggs, Bacon, Coffee</p>
+    </div>
+    <div class="menu lunch">
+        <h2>Lunch Menu</h2>
+        <p>Burgers, Salads, Sandwiches, Smoothies</p>
+    </div>
+    <div class="menu dinner">
+        <h2>Dinner Menu</h2>
+        <p>Steak, Pasta, Seafood, Wine</p>
+    </div>
+</body>
+</html>
