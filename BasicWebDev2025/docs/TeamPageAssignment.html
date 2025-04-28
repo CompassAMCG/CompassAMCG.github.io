@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Our Team</title>
+  <style>
+    body, h1, h2, p {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      padding-top: 60px;
+    }
+    nav {
+      background-color: #333;
+      color: white;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+    .team-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .team-member {
+      background: white;
+      margin: 10px;
+      padding: 20px;
+      width: calc(50% - 40px);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+    }
+    .team-member img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-right: 20px;
+      float: left;
+    }
+    .team-member .bio {
+      overflow: hidden; 
+    }
+    .team-member h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .team-member p {
+      color: #666;
+    }
+    @media (max-width: 768px) {
+      .team-member {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .team-member img {
+        margin-right: 0;
+        margin-bottom: 15px;
+        float: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h1>Meet Our Team</h1>
+    <div class="team-section">
+      <div class="team-member">
+        <img src="../images/succulentplaceholderalice.png" alt="Alice Johnson">
+        <div class="bio">
+          <h2>Alice Johnson</h2>
+          <p>CEO & Founder</p>
+          <p>Alice has over 20 years of experience in the industry and is the visionary behind our company.</p>
+        </div>
+      </div>
+
+      <div class="team-member">
+        <img src="../images/succulentplaceholderbob.png" alt="Bob Smith">
+        <div class="bio">
+          <h2>Bob Smith</h2>
+          <p>Chief Technology Officer</p>
+          <p>Bob is the tech guru, who leads our development team in creating new innovations.</p>
+        </div>
+      </div>
+
+      <div class="team-member">
+        <img src="../images/succulentplaceholdercharlie.png" alt="Charlie Davis">
+        <div class="bio">
+          <h2>Charlie Davis</h2>
+          <p>Head of Marketing</p>
+          <p>Charlie builds compelling marketing strategies that drive our company's growth.</p>
+        </div>
+      </div>
+
+      <div class="team-member">
+        <img src="../images/succulentplaceholderdana.png" alt="Dana Lee">
+        <div class="bio">
+          <h2>Dana Lee</h2>
+          <p>Lead Designer</p>
+          <p>Dana's creative designs are at the heart of our brand's visual identity.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

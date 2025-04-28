@@ -1,0 +1,23 @@
+.scorecard {
+  width: 60%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.scorecard th, .scorecard td {
+  border: 1px solid #555;
+  padding: 10px;
+}
+
+.scorecard th {
+  background-color: #ddd;
+}
+
+.scorecard tr:hover {
+  background-color: #f0f8ff;
+}
+
+.scorecard td:first-child {
+  font-weight: bold;
+}

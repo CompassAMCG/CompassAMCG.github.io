@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fish Puzzle</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f8ff;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        "name"
+        "info"
+        "puzzle";
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .name {
+      grid-area: name;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    .info {
+      grid-area: info;
+      font-size: 1em;
+    }
+
+    .puzzle-container {
+      grid-area: puzzle;
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      gap: 2px;
+      justify-content: center;
+    }
+
+    .puzzle-piece {
+      object-fit: contain;
+      display: block;
+    }
+
+    .hidden-piece {
+      display: none;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    .date {
+      margin-top: 10px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="name">Name: Aiden McGaughey</div>
+
+    <div class="info">
+      <h2>Puzzle: Fish Puzzle</h2>
+      <div class="date">Date Completed: April 8, 2025</div>
+    </div>
+
+    <div class="puzzle-container">
+      <img src="4.4_puzzle3/puzzle1topleft.jpg" alt="Piece 1" class="puzzle-piece">
+      <img src="4.4_puzzle3/puzzle2topcenter.jpg" alt="Piece 2" class="puzzle-piece">
+      <img src="4.4_puzzle3/puzzle3topright.jpg" alt="Piece 3" class="puzzle-piece">
+      
+      <img src="4.4_puzzle3/puzzle4middleleft.jpg" alt="Piece 4" class="puzzle-piece">
+      <img src="4.4_puzzle3/puzzle5middlecenter.jpg" alt="Piece 5" class="puzzle-piece">
+      <img src="4.4_puzzle3/puzzle6middleright.jpg" alt="Piece 6" class="puzzle-piece">
+      
+      <img src="4.4_puzzle3/puzzle7bottomleft.jpg" alt="Piece 7" class="puzzle-piece">
+      <img src="4.4_puzzle3/puzzle8bottomcenter.jpg" alt="Piece 8" class="puzzle-piece">
+      <img src="4.4_puzzle3/puzzle9bottomright.jpg" alt="Piece 9" class="puzzle-piece">
+
+      <img src="4.4_puzzle3/puzzle_fake.jpg" alt="Fake Piece" class="puzzle-piece hidden-piece">
+    </div>
+  </div>
+</body>
+</html>
