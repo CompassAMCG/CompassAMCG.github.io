@@ -1,0 +1,79 @@
+body {
+  background: #f0f0f0;
+  font-family: sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.image-wrapper {
+  position: relative;
+  margin: 20px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.butterfly {
+  filter: opacity(75%) invert(1);
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.dinosaur {
+  filter: drop-shadow(15px 0px 5px #000000) hue-rotate(100deg);
+}
+
+.football-container {
+  border-width: 45px;
+  border-style: solid;
+  border-image-source: url('../images/tic-tac-toe.PNG');
+  border-image-slice: 30% fill;
+  border-image-repeat: round;
+  display: inline-block;
+}
+
+.football-container img {
+  display: block;
+  filter: grayscale(1);
+}
+
+.penguins {
+  filter: sepia(50%);
+  border-radius: 225px 225px 225px 225px / 150px 150px 150px 150px;
+  border: 1px solid black;
+}
+
+.seagull {
+  background: linear-gradient(135deg, #8888ff, white);
+  padding: 10px;
+  box-shadow: 0 20px 5px rgba(0,0,0,0.3);
+  display: inline-block;
+}
+
+.stage-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.stage-image {
+  display: block;
+  filter: blur(5px);
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.stage-text {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  text-shadow: 4px 4px 4px black;
+  z-index: 1;
+  pointer-events: none;
+}
