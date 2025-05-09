@@ -31,7 +31,7 @@ img {
 .football-container {
   border-width: 45px;
   border-style: solid;
-  border-image-source: url(/images/tic-tac-toe.png);
+  border-image-source: url(./images/tic-tac-toe.png);
   border-image-slice: 30% fill;
   border-image-repeat: round;
   display: inline-block;
